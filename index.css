@@ -1,0 +1,388 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 15px;
+  }
+  
+  header1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f3eeee;
+    padding: 15px;
+  }
+  
+  .logo {
+    width: 200px;
+  }
+  
+  .logo img {
+    width: 100%;
+  }
+  
+  .slogan {
+    color: #fff;
+    font-size: 24px;
+    padding: 0 15px;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li {
+    padding: 0 15px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(255, 255, 255);
+  background-color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.active{
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+  
+/*slideshow end*/
+
+  .ministerDetails {
+    float: left;
+    padding-left: 94px;
+    width: 100%;
+}
+.ministerPic {
+  float: left;
+  margin-right: -84px;
+  width: 84px;
+}
+.name {
+  /* font-size: 1.077em; */
+  font-size: 1.154em;
+  color: #0d5282;
+  line-height: 1.615em;
+}
+.post {
+  /* font-size: 1em; */
+  font-size: 1.077em;
+  color: #323232;
+  line-height: 1.615em;
+}
+
+
+.pledge ,
+.song ,.amrit,.preamble,.utsav,.channel,
+.newportal,.Hpc,.MOU,.Mandate,.Questions,.Charter,.Grievances,
+.Questions,.Information,.Publications,.Subordinate,.Legal{
+    border-bottom: 1px dotted black;
+    margin-top: 15px;
+    margin-bottom: 10px;
+
+}
+.viewed,
+.news
+{
+   border-bottom: 2px dotted black;
+    padding-left: 50px;
+    text-align: center;
+    padding-right: 22px;
+}
+
+.viewed,.news{
+    padding-bottom: 12px;
+}
+
+.viewed ul,
+.news ul {
+    margin-top: 20px;
+   padding-left: 60px;
+
+}
+
+.news{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.viewed ul li, .news ul li{
+    border-bottom: 1px dotted black;
+    margin-top: 15px;
+}
+
+.press {
+  background-color: rgb(138, 198, 220);
+  font-size:30px ;
+  margin-top: 20px;
+  border: 1px solid black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 100px;
+  padding-right: 130px;
+  align-items: center;
+}
+
+.culture,.virtualmuseum,.GandhiHeritage{
+  font-size: 18px;
+      margin-top: 20px;
+      border: 1px solid black;
+
+
+
+}
+
+
+
+
+  .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #eee;
+  }
+  
+  .link {
+    flex: 1;
+  }
+  
+  .link h2 {
+    font-size: 44px;
+    margin-bottom: 10px;
+  }
+  
+  .link ul {
+    list-style: none;
+  }
+  
+  .link li {
+    padding: 5px 0;
+  }
+  
+  .link a {
+    text-decoration: none;
+    color: #333;
+  }
+
+
+/*sections*/
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .section {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 10px;
+    width: 500px; 
+   /* height:400px;*/
+  }
+  
+  .subsection {
+    background-color: #e0e0e0;
+    padding: 10px;
+    margin: 5px;
+  }
+  /*section*/
+
+
+
+  /*footer*/
+ 
+  #footer{
+    padding-top: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    
+}
+
+#footer > button {
+    font-size: 16px;
+    margin-bottom: 15px;
+    margin-left: 12px;
+}
+
+#footer > h4{
+    text-align:end;
+    padding-bottom: 15px;
+    padding-right: 5px;
+}
+
+  .social-media-icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .social-media-icons a {
+    margin-left: 10px;
+  }
+  
+  .social-media-icons a:first-child {
+    margin-left: 0;
+  }
+  
+  .social-media-icons img {
+    height: 30px;
+    width: auto;
+  }
+
+
+ /* CSS for chat messages */
+ #chat-box {
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.user-message {
+    text-align: right;
+    color: white;
+    margin-bottom: 12PX;
+    margin-top: 12PX;
+    /* WhatsApp green color */
+}
+
+.bot-message {
+    text-align: left;
+    color: white;
+    margin-bottom: 19PX;
+}
+
+#toggle-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 30px;
+    border: none;
+    background-color: rgb(96, 96, 201);
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 9999;
+    /* Ensure the icon stays on top of other elements */
+}
+
+#toggle-btn i {
+    font-size: 100px;
+    
+    /* Adjust the size of the icon */
+}
+
+#chatbot-container {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    max-width: 300px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 9998;
+    /* Ensure the chatbot container stays below the icon */
+}
+
+#user-input {
+    width: calc(100% - 70px);
+    margin-right: 55px;
+    padding: 15px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    font-size: 12px;
+}
+
+#send-btn {
+    padding: 15px 30px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+
+}
+
+/* Hide Google Translate logo */
+.goog-te-gadget-icon {
+    display: none;
+}
+
+.webinfo h1{
+    background-color: black;
+    text-align:centre;
+    align-items: center;
+    color: white;
+
+}
+.webinfo h3{
+    text-align: center;
+    margin-top: 20px;
+}
+.webinfo p{
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-bottom: 20px;
+    margin-top: 25px;
+}

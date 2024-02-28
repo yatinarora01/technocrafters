@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ministry of culture</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <button id="toggle-btn" onclick="toggleChatbot()">
+        <i class="fas fa-comments"></i> <!-- Font Awesome icon for chat -->
+    </button>
+    <div id="chatbot-container">
+        <div id="chat-box"></div>
+        <input type="text" id="user-input" placeholder="Type a message...">
+        <button id="send-btn" onclick="sendMessage()">Send</button>
+    </div>
+    <header>
+        <div class="slogan">
+            <div id="google_translate_element"></div>
+        </div>
+        <div class="slogan">
+            satyamev jayate
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">MY GOVERNMENT</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+    <header1>
+        <div class="logo">
+            <img src="logo.png">
+        </div>
+        <div class="logo">
+            <img src="G20.png">
+        </div>
+        <div class="logo">
+            <img src="gandhi.png">
+        </div>
+    </header1>
+    
+    <br>
+    
+
+    <main>
+        <div class="slideshow-container">
+
+          <div class="mySlides fade">
+            <video src="Saga of Shri Ram - A Journey through Stamps.mp4" type="mp4" width="900px" height="300px" controls autoplay muted>
+            </video>
+          </div>
+        
+        
+          <div class="mySlides fade">
+            <img src="2.jpg" style="width:100%">
+          </div>
+          <div class="mySlides fade">
+            <img src="3.jpg" style="width:100%">
+          </div>
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        
+        <script>
+          let slideIndex = 1;
+          showSlides(slideIndex);
+          
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+          
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+          
+          function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+          }
+          </script>
+   
+   <div class="container">
+    <div class="section">
+      <div class="subsection"> 
+        <br>
+        <a href="https://indiaculture.gov.in/shri-gk-reddy" style="display: inline-block;">
+          <div class="ministerPic">
+            <img src="https://indiaculture.gov.in/sites/all/themes/moc/images/GKR-9-7-21.jpg" width="84" height="108">
+          </div>
+        
+          <div class="ministerDetails">              
+            <span class="name">
+              Shri G.Kishan Reddy		</span><br>
+            <span class="post">Minister of Culture</span> <br>
+          </div>
+        </a>
+        <a href="https://indiaculture.gov.in/shri-arjun-ram-meghwal" style="display: inline-block;">
+          <div class="ministerPic" style="text-align:left">
+            <img src="https://indiaculture.gov.in/sites/all/themes/moc/images/Arjun-Ram-9-7-21.jpg"  width="84" height="108">
+           </div>                        
+      <div class="ministerDetails">              
+        <span class="name">
+          Shri Arjun Ram Meghwal     </span><br>
+         <span class="post">Minister of State for Culture</span> <br>
+         </div>
+          </a>
+          <a href="https://indiaculture.gov.in/smt-meenakashi-lekhi" style="display: inline-block;">
+            <div class="ministerPic" style="text-align:left">
+              <img src="https://indiaculture.gov.in/sites/all/themes/moc/images/lekhi-smt-meenakashi-9-7-21.jpg" width="84" height="108">
+               </div>
+                <div class="ministerDetails">            
+                  <span class="name">Smt. Meenakashi Lekhi     </span><br>
+                  <span class="post">Minister of State for Culture</span> <br>
+                </div>
+              </a>
+              <br>
+        </div>
+
+<br>
+<br>
+<br>
+      <div class="subsection">
+        <div class="pledge">
+            <a href="https://pledge.cvc.nic.in" target="_blank">
+                <h4>Integrity Pledge</h4>
+            </a>
+        </div>
+
+        <div class="song">
+            <a href="https://www.youtube.com/watch?v=bXitaSmHB0s" target="_blank">
+                <h4>Har Ghar ka Tiranga Anthem</h4>
+            </a>
+        </div>
+
+        <div class="amrit">
+            <a href="https://amritmahotsav.nic.in/" target="_blank">
+                <h4>Azadi Ka Amrit Mahotsav</h4>
+            </a>
+        </div>
+        <div class="preamble" >
+            <a href="https://indiaculture.gov.in/sites/default/files/events/Preamble_the_Soul_of_the_Constitution_26.11.2020.pdf" target="_blank">
+                <h4>Preamble to constitution of India </h4>
+            </a>
+        </div>
+
+        <div class="">
+            <a href="https://amritmahotsav.nic.in/" target="_blank">
+                <h4>Azadi Ka Amrit Mahotsav</h4>
+            </a>
+        </div>
+        <div class="utsav">
+            <a href="https://utsav.gov.in/" target="_blank">
+                <h4>Utsav Portal</h4>
+            </a>
+        </div>
+        <div class="channel">
+            <a href="https://indiaculture.gov.in/sites/default/files/events/Channel_of_Submission_and_Level_of_Disposal_in_various_Sections_Divisions_in_Ministry_of_Culture_regarding_Dtd_1st_November_2021.pdf" target="_blank">
+                <h4>'Channel of Submission' and 'Level of Disposal'</h4>
+            </a>
+        </div>
+        <div class="newportal">
+            <a href="https://culture.dashboard.nic.in/DashboardF.aspx" target="_blank">
+                <h4>Dashboard (NEW)</h4>
+            </a>
+        </div>
+
+        <div class="Hpc">
+            <a href="https://indiaculture.gov.in/sites/default/files/hpc_report/HPC%20REPORT%202014.pdf" target="_blank">
+                <h4>HPC Report</h4>
+            </a>
+        </div>
+
+        <div class="MOU">
+            <a href="https://indiaculture.gov.in/mou-organizations" target="_blank">
+                <h4>MoU with Organizations</h4>
+            </a>
+        </div>
+
+        <div class="Mandate">
+            <a href="https://indiaculture.gov.in/legal-mandate" target="_blank">
+                <h4>Legal Mandate</h4>
+            </a>
+        </div>
+
+        <div class="Questions">
+            <a href="https://indiaculture.gov.in/parliament-questions" target="_blank">
+                <h4>Parliament Questions</h4>
+            </a>
+        </div>
+
+        <div class="Charter">
+            <a href="https://indiaculture.gov.in/citizen-charter" target="_blank">
+                <h4>Citizen Charter</h4>
+            </a>
+        </div>
+        <div class="Grievances">
+            <a href="https://indiaculture.gov.in/grievances" target="_blank">
+                <h4>Grievances</h4>
+            </a>
+        </div>
+
+        <div class="Information">
+            <a href="https://indiaculture.gov.in/right-information" target="_blank">
+                <h4>Right to Information</h4>
+            </a>
+        </div>
+        <div class="Publications">
+            <a href="https://indiaculture.gov.in/publications" target="_blank">
+                <h4>Publications</h4>
+            </a>
+        </div>
+
+        <div class=" Subordinate ">
+            <a href="https://indiaculture.gov.in/acts-subordinate-legislation" target="_blank">
+                <h4>Acts & Subordinate Legislation</h4>
+            </a>
+        </div>
+
+        <div class="Legal">
+            <a href="https://indiaculture.gov.in/legal-mandate" target="_blank">
+                <h4>Legal Mandate</h4>
+            </a>
+        </div>
+        </div>
+    </div>
+
+
+    <div class="section">
+      <div class="link">
+          <h1>culture</h1>
+        
+          <a href=# style="display: inline-block;">
+            <div class="ministerPic" style="text-align:left">
+              <img src="world.jpg" width="80" height="90">
+               </div>
+                <div class="ministerDetails">   
+                    <br> 
+                  <span class="post">World Heritage &emsp;&emsp;</span>
+                </div>
+              </a>
+              <a href=# style="display: inline-block;">
+                <div class="ministerPic" style="text-align:left">
+                  <img src="mus.jpg" width="80" height="90">
+                   </div>
+                    <div class="ministerDetails">   
+                        <br> 
+                      <span class="post">Museums &amp; Antiquities&emsp;&emsp;</span>
+                    </div>
+                  </a>
+                  <a href=# style="display: inline-block;">
+                    <div class="ministerPic" style="text-align:left">
+                      <img src="build.jpg" width="80" height="90">
+                       </div>
+                        <div class="ministerDetails">   
+                            <br> 
+                          <span class="post">Built Heritage&emsp;&emsp;</span>
+                        </div>
+                      </a>
+                      <a href=# style="display: inline-block;">
+                        <div class="ministerPic" style="text-align:left">
+                          <img src="lib.jpg" width="80" height="90">
+                           </div>
+                            <div class="ministerDetails">   
+                                <br> 
+                              <span class="post">Libraries &amp; Manuscripts &emsp;&emsp;&emsp;</span><br>
+                            </div>
+                          </a>
+                          <a href=# style="display: inline-block;">
+                            <div class="ministerPic" style="text-align:left">
+                              <img src="archives.jpg" width="80" height="90">
+                               </div>
+                                <div class="ministerDetails">   
+                                    <br> 
+                                  <span class="post"> Archives&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</span><br>
+                                </div>
+                              </a>
+                              <a href=# style="display: inline-block;">
+                                <div class="ministerPic" style="text-align:left">
+                                  <img src="sci.jpg" width="80" height="90">
+                                   </div>
+                                    <div class="ministerDetails">   
+                                        <br> 
+                                      <span class="post">Science&emsp;&emsp;&emsp;</span>
+                                    </div>
+                                  </a>
+                                  <a href=# style="display: inline-block;">
+                                    <div class="ministerPic" style="text-align:left">
+                                      <img src="lit.jpg" width="80" height="90">
+                                       </div>
+                                        <div class="ministerDetails">   
+                                            <br> 
+                                          <span class="post">Literature &amp; Folklore&emsp;&emsp;&emsp;</span>
+                                        </div>
+                                      </a>
+                                      <a href=# style="display: inline-block;">
+                                        <div class="ministerPic" style="text-align:left">
+                                          <img src="festival.jpg" width="80" height="90">
+                                           </div>
+                                            <div class="ministerDetails">   
+                                                <br> 
+                                              <span class="post">Festivals&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</span>
+                                            </div>
+                                          </a>
+                                          <a href=# style="display: inline-block;">
+                                            <div class="ministerPic" style="text-align:left">
+                                              <img src="music.jpg" width="80" height="90">
+                                               </div>
+                                                <div class="ministerDetails">   
+                                                    <br> 
+                                                  <span class="post">Music &amp; Dance&emsp;&emsp;&emsp;&emsp;&emsp;</span>
+                                                </div>
+                                              </a>
+                                              <a href=# style="display: inline-block;">
+                                                <div class="ministerPic" style="text-align:left">
+                                                  <img src="visual.jpg" width="80" height="90">
+                                                   </div>
+                                                    <div class="ministerDetails">   
+                                                        <br> 
+                                                      <span class="post">Visual Arts&emsp;&emsp;&emsp;&emsp;&emsp;</span>
+                                                    </div>
+                                                  </a>
+                                                  <a href=# style="display: inline-block;">
+                                                    <div class="ministerPic" style="text-align:left">
+                                                      <img src="anth.jpg" width="80" height="90">
+                                                       </div>
+                                                        <div class="ministerDetails">   
+                                                            <br> 
+                                                          <span class="post">Anthropology&emsp;&emsp;&emsp;</span>
+                                                        </div>
+                                                      </a>
+                                                      <a href=# style="display: inline-block;">
+                                                        <div class="ministerPic" style="text-align:left">
+                                                          <img src="project.jpg" width="80" height="90">
+                                                           </div>
+                                                            <div class="ministerDetails">   
+                                                                <br> 
+                                                              <span class="post">Project Mausam&emsp;&emsp;&emsp;</span>
+                                                            </div>
+                                                          </a>
+                          
+         </div>
+      </div>
+
+
+    <div class="section">
+        <div class="viewed">
+            <h3>Most Viewed </h3>
+            <ul>
+                <li>Art and culture of Meghalaya</li>
+                <li>Art and culture of Haryana</li>
+                <li>Art and culture of Punjab</li>
+                <li>Art and culture of Rajasthan</li>
+                <li>Art and culture of Kerala</li>
+            </ul>
+        </div>
+
+        <div class="news">
+            <h3>Latest News</h3>
+            <ul>
+                <li>Haryana</li>
+                <li>Delhi</li>
+                <li>Rajasthan</li>
+                <li>Kolkata</li>
+                <li>Tamil Nadu</li>
+            </ul>
+        </div>
+        <button class="press">
+          <a href="https://indiaculture.gov.in/press-release">
+              Press Releases
+          </a>
+      </button>
+
+      <button class="culture">
+          <a href="https://indianculture.gov.in">
+              <img src="indianculture.png" alt="indian culture" width="100%" height="100%">
+          </a>
+      </button>
+
+      <button class="virtualmuseum">
+          <a href="https://indiaculture.gov.in/virtual-museums">
+              <img src="virtualmuseum.png" alt="museum" width="100%" height="100%">
+          </a>
+      </button>
+
+      <button class="GandhiHeritage">
+          <a href="https://www.gandhiheritageportal.org">
+              <img src="gandhi.png" alt="gandhi portal" width="100%" height="100%">
+          </a>
+      </button>
+        </div>
+      </div>
+ 
+
+
+
+
+
+    </main>
+    <br>
+    <section id="footer">
+        <button class="terms"> Terms & Conditions</button>
+        <button class="terms"> Privacy Policy</button>
+        <button class="terms"> Copyright Policy</button>
+        <button class="terms"> Help</button>
+        <button class="terms">Web Information </button>
+
+        <h4>Copyright© 2024 Ministry of Culture, Government of India, All Rights Reserved.</h4>
+        <br>
+        <h4>Created by Techno Crafters </h4>
+        <div class="social-media-icons">
+          <a href="https://www.youtube.com/user/sanskritigoi" target="_blank"><img src="youtube1.png" alt="YouTube"></a>
+          <a href="https://www.instagram.com/ministryofculturegoi/" target="_blank"><img src="ig.png" alt="Instagram"></a>
+          <a href="https://twitter.com/MinOfCultureGoI" target="_blank"><img src="twitter.png" alt="Twitter"></a>
+        </div>
+    </section>
+
+     <!-- Google Translate Widget -->
+
+     <div id="google_translate_element"></div>
+
+ 
+     <!-- Content to Translate -->
+     <div data-lang="en" class="translated-content">
+ 
+         <!-- Add more elements with data-translate attribute for translation -->
+     </div>
+ 
+ 
+     <script src="index.js"></script>
+     <!--Load Google Translate API-->
+     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
