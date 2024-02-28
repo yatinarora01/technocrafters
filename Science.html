@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ministry of culture</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+     <!--CHAT BOT -->
+    
+     <button id="toggle-btn" onclick="toggleChatbot()">
+        <i class="fas fa-comments"></i> <!-- Font Awesome icon for chat -->
+    </button>
+    <div id="chatbot-container">
+        <div id="chat-box"></div>
+        <input type="text" id="user-input" placeholder="Type a message...">
+        <button id="send-btn" onclick="sendMessage()">Send</button>
+    </div>
+
+
+    <header>
+        <div class="slogan">
+            <div id="google_translate_element"></div>
+        </div>
+        <div class="slogan">
+            satyamev jayate
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">MY GOVERNMENT</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+    <header1>
+        <div class="logo">
+            <img src="logo.png">
+        </div>
+        <div class="logo">
+            <img src="G20.png">
+        </div>
+        <div class="logo">
+            <img src="gandhi.png">
+        </div>
+    </header1>
+    <br>
+
+    <div class="webinfo">
+    <h1>NATIONAL COUNCIL OF SCIENCE MUSEUMS (NCSM)</h1>
+    <p>National Council of Science Museums (NCSM) is an autonomous society under the Ministry of Culture, Government of India set up with the objective to develop a culture of science, technology & innovation and to encourage scientific temper in the society by setting up of Science Cities/Science Centres/Innovation Hubs and organising S& T awareness programmes throughout the country. The organization is engaged in setting up of facilities such as Science Cities, Science Centres, Innovation Hubs, Mobile Science Exhibitions (MSE) etc. and Science Outreach programmes such as Science Seminar, Science Drama, Science & Engineering Fair, Science Film Festival, Workshops, Training, Lectures and Science demonstrations etc. for general public and students in particular.</p>
+    <p><b>Holidays</b></p>
+    <p>The Science Centers under NCSM are closed only on two holidays (Holi and Diwali).</p>
+    <p><b>Working hours</b></p>
+    <p>From 10.00 A.M. to 5.30 P.M. without interruption.</p>
+
+    </div>
+
+    <section id="footer">
+        <button class="terms"> Terms & Conditions</button>
+        <button class="terms"> Privacy Policy</button>
+        <button class="terms"> Copyright Policy</button>
+        <button class="terms"> Help</button>
+        <button class="terms">Web Information </button>
+
+        <h4>Copyright© 2024 Ministry of Culture, Government of India, All Rights Reserved.</h4>
+        <br>
+        <h4>Created by Techno Crafters </h4>
+        <div class="social-media-icons">
+          <a href="https://www.youtube.com/user/sanskritigoi" target="_blank"><img src="youtube1.png" alt="YouTube"></a>
+          <a href="https://www.instagram.com/ministryofculturegoi/" target="_blank"><img src="ig.png" alt="Instagram"></a>
+          <a href="https://twitter.com/MinOfCultureGoI" target="_blank"><img src="twitter.png" alt="Twitter"></a>
+        </div>
+    </section>
+
+     <!-- Google Translate Widget -->
+
+     <div id="google_translate_element"></div>
+ 
+ 
+     <!-- Content to Translate -->
+     <div data-lang="en" class="translated-content">
+ 
+         <!-- Add more elements with data-translate attribute for translation -->
+     </div>
+ 
+ 
+     <script src="index.js"></script>
+     <!--Load Google Translate API-->
+     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+ 
+</body>
+</html>
