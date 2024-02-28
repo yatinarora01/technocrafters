@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ministry of culture</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <button id="toggle-btn" onclick="toggleChatbot()">
+        <i class="fas fa-comments"></i> <!-- Font Awesome icon for chat -->
+    </button>
+    <div id="chatbot-container">
+        <div id="chat-box"></div>
+        <input type="text" id="user-input" placeholder="Type a message...">
+        <button id="send-btn" onclick="sendMessage()">Send</button>
+    </div>
+
+    <header>
+        <div class="slogan">
+            <div id="google_translate_element"></div>
+        </div>
+        <div class="slogan">
+            satyamev jayate
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">MY GOVERNMENT</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+    <header1>
+        <div class="logo">
+            <img src="logo.png">
+        </div>
+        <div class="logo">
+            <img src="G20.png">
+        </div>
+        <div class="logo">
+            <img src="gandhi.png">
+        </div>
+    </header1>
+    
+
+
+
+
+
+
+
+
+
+    <br>
+
+    <section id="footer">
+        <button class="terms"> Terms & Conditions</button>
+        <button class="terms"> Privacy Policy</button>
+        <button class="terms"> Copyright Policy</button>
+        <button class="terms"> Help</button>
+        <button class="terms">Web Information </button>
+
+        <h4>Copyright© 2024 Ministry of Culture, Government of India, All Rights Reserved.</h4>
+        <br>
+        <h4>Created by Techno Crafters </h4>
+        <div class="social-media-icons">
+          <a href="https://www.youtube.com/user/sanskritigoi" target="_blank"><img src="youtube1.png" alt="YouTube"></a>
+          <a href="https://www.instagram.com/ministryofculturegoi/" target="_blank"><img src="ig.png" alt="Instagram"></a>
+          <a href="https://twitter.com/MinOfCultureGoI" target="_blank"><img src="twitter.png" alt="Twitter"></a>
+        </div>
+    </section>
+
+</section> <!-- Google Translate Widget -->
+
+<div id="google_translate_element"></div>
+
+
+
+
+
+<!-- Content to Translate -->
+<div data-lang="en" class="translated-content">
+
+    <!-- Add more elements with data-translate attribute for translation -->
+</div>
+
+
+<script src="index.js"></script>
+<!--Load Google Translate API-->
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+</body>
+</html>
